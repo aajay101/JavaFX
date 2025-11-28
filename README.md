@@ -90,3 +90,5 @@ Potential improvements for future versions:
 - Export functionality for reports
 - Advanced filtering and sorting
 - Multi-user support with roles and permissions
+
+
