@@ -19,3 +19,4 @@ public class Metric {
         this.isPositive = isPositive;
     }
 }
+

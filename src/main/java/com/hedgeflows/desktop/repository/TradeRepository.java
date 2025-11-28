@@ -25,3 +25,4 @@ public class TradeRepository extends JsonRepository<Trade> {
         return trades;
     }
 }
+

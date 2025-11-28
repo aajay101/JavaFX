@@ -30,3 +30,4 @@ public class LocalDateAdapter extends TypeAdapter<LocalDate> {
         }
     }
 }
+

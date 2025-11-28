@@ -26,3 +26,4 @@ public class UserRepository extends JsonRepository<User> {
                 .orElse(null);
     }
 }
+

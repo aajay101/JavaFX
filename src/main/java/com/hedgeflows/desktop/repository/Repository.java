@@ -11,3 +11,4 @@ public interface Repository<T extends BaseEntity> {
     T save(T entity);
     void delete(UUID id);
 }
+

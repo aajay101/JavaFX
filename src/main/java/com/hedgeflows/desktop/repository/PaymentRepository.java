@@ -25,3 +25,4 @@ public class PaymentRepository extends JsonRepository<Payment> {
         return payments;
     }
 }
+
