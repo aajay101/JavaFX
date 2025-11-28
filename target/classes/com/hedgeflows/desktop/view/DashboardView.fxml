@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane
+        xmlns="http://javafx.com/javafx/17"
+        xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="com.hedgeflows.desktop.controller.DashboardController"
+        fitToWidth="true"
+        pannable="false"
+        hbarPolicy="NEVER">
+
+    <content>
+        <VBox spacing="32.0">
+
+            <padding>
+                <Insets top="32" right="32" bottom="48" left="32"/>
+            </padding>
+
+            <!-- TITLE -->
+            <Label styleClass="h1" text="Dashboard"/>
+
+            <!-- METRICS GRID -->
+            <GridPane hgap="24" vgap="24">
+
+                <columnConstraints>
+                    <ColumnConstraints hgrow="ALWAYS"/>
+                    <ColumnConstraints hgrow="ALWAYS"/>
+                    <ColumnConstraints hgrow="ALWAYS"/>
+                    <ColumnConstraints hgrow="ALWAYS"/>
+                </columnConstraints>
+
+                <!-- Metric Cards -->
+                <VBox styleClass="metric-card" GridPane.columnIndex="0">
+                    <children>
+                        <Label text="Total Balance" styleClass="text-secondary"/>
+                        <Label fx:id="totalBalanceLabel" styleClass="h2" text="$0.00"/>
+                        <Label text="+12% vs last month" styleClass="text-success"/>
+                    </children>
+                </VBox>
+
+                <VBox styleClass="metric-card" GridPane.columnIndex="1">
+                    <children>
+                        <Label text="Cash Inflow" styleClass="text-secondary"/>
+                        <Label fx:id="cashInflowLabel" styleClass="h2" text="$0.00"/>
+                        <Label text="+8% vs last month" styleClass="text-success"/>
+                    </children>
+                </VBox>
+
+                <VBox styleClass="metric-card" GridPane.columnIndex="2">
+                    <children>
+                        <Label text="Net Hedge" styleClass="text-secondary"/>
+                        <Label fx:id="netHedgeLabel" styleClass="h2" text="$0.00"/>
+                        <Label text="-2% vs last month" styleClass="text-danger"/>
+                    </children>
+                </VBox>
+
+                <VBox styleClass="metric-card" GridPane.columnIndex="3">
+                    <children>
+                        <Label text="Active Positions" styleClass="text-secondary"/>
+                        <Label fx:id="activePositionsLabel" styleClass="h2" text="0"/>
+                        <Label text="+3 vs last month" styleClass="text-success"/>
+                    </children>
+                </VBox>
+
+            </GridPane>
+
+            <!-- CHART SECTION -->
+            <HBox spacing="24">
+
+                <VBox styleClass="card" HBox.hgrow="ALWAYS" spacing="16">
+                    <children>
+                        <Label styleClass="h2" text="Cashflow Forecast"/>
+                        <BarChart fx:id="cashflowChart" VBox.vgrow="ALWAYS">
+                            <xAxis>
+                                <CategoryAxis side="BOTTOM"/>
+                            </xAxis>
+                            <yAxis>
+                                <NumberAxis side="LEFT"/>
+                            </yAxis>
+                        </BarChart>
+                    </children>
+                </VBox>
+
+                <!-- ACTION ITEMS -->
+                <VBox styleClass="card" spacing="16" prefWidth="260">
+                    <children>
+                        <Label styleClass="h2" text="Action Items"/>
+                        <Label text="Review pending trades"/>
+                        <Label text="Update risk exposure"/>
+                        <Label text="Generate monthly report"/>
+                        <Label text="Contact client for renewal"/>
+                    </children>
+                </VBox>
+
+            </HBox>
+
+            <!-- RECENT TRADES TABLE -->
+            <VBox styleClass="card" spacing="16">
+                <children>
+                    <Label styleClass="h2" text="Recent Trades"/>
+
+                    <TableView fx:id="tradesTable" VBox.vgrow="ALWAYS">
+                        <columns>
+                            <TableColumn fx:id="pairCol" text="Pair"/>
+                            <TableColumn fx:id="amountCol" text="Amount"/>
+                            <TableColumn fx:id="typeCol" text="Type"/>
+                            <TableColumn fx:id="statusCol" text="Status"/>
+                            <TableColumn fx:id="dateCol" text="Date"/>
+                        </columns>
+                    </TableView>
+                </children>
+            </VBox>
+
+        </VBox>
+    </content>
+
+</ScrollPane>
+

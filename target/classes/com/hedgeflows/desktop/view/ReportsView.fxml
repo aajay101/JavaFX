@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox
+        xmlns="http://javafx.com/javafx/17"
+        xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="com.hedgeflows.desktop.controller.ReportsController"
+        spacing="20.0"
+        stylesheets="@../../../css/styles.css">
+
+    <padding>
+        <Insets top="30.0" right="30.0" bottom="30.0" left="30.0"/>
+    </padding>
+
+    <children>
+
+        <!-- HEADER -->
+        <Label styleClass="h1" text="Financial Reports"/>
+
+        <!-- LIST -->
+        <ListView fx:id="reportsList" VBox.vgrow="ALWAYS"/>
+
+    </children>
+
+</VBox>

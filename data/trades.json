@@ -1,0 +1,47 @@
+[
+  {
+    "currencyPair": "EUR/USD",
+    "amount": 10000.0,
+    "type": "BUY",
+    "status": "OPEN",
+    "date": "2025-11-22",
+    "id": "1edb7509-7b1c-493e-8d8e-5cea0bc68778",
+    "createdAt": "2025-11-27T18:47:26.5024914"
+  },
+  {
+    "currencyPair": "GBP/USD",
+    "amount": 15000.0,
+    "type": "SELL",
+    "status": "CLOSED",
+    "date": "2025-11-24",
+    "id": "109b26a9-9fe8-4160-a411-f80576077b94",
+    "createdAt": "2025-11-27T18:47:26.5024914"
+  },
+  {
+    "currencyPair": "USD/JPY",
+    "amount": 20000.0,
+    "type": "BUY",
+    "status": "OPEN",
+    "date": "2025-11-25",
+    "id": "37d46df7-675b-4e0d-8a11-acf32b5930d2",
+    "createdAt": "2025-11-27T18:47:26.5024914"
+  },
+  {
+    "currencyPair": "AUD/USD",
+    "amount": 5000.0,
+    "type": "SELL",
+    "status": "CLOSED",
+    "date": "2025-11-26",
+    "id": "aff304af-8228-400a-97be-e7b943354350",
+    "createdAt": "2025-11-27T18:47:26.5024914"
+  },
+  {
+    "currencyPair": "USD/CAD",
+    "amount": 7500.0,
+    "type": "BUY",
+    "status": "OPEN",
+    "date": "2025-11-27",
+    "id": "46a79caa-4fb9-441d-a6a5-a6240e17bf26",
+    "createdAt": "2025-11-27T18:47:26.5024914"
+  }
+]

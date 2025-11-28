@@ -1,0 +1,47 @@
+[
+  {
+    "beneficiary": "Amazon Web Services",
+    "amount": 1250.75,
+    "currency": "USD",
+    "dueDate": "2025-12-02",
+    "status": "OUTSTANDING",
+    "id": "4ae641ef-3a2d-44dc-afd0-a3157fed26d1",
+    "createdAt": "2025-11-27T18:47:22.6452476"
+  },
+  {
+    "beneficiary": "Microsoft Azure",
+    "amount": 2100.0,
+    "currency": "USD",
+    "dueDate": "2025-12-07",
+    "status": "OUTSTANDING",
+    "id": "a5129623-4719-45b1-b1ef-13b639d57c3c",
+    "createdAt": "2025-11-27T18:47:22.6452476"
+  },
+  {
+    "beneficiary": "Google Cloud Platform",
+    "amount": 950.5,
+    "currency": "USD",
+    "dueDate": "2025-12-12",
+    "status": "OUTSTANDING",
+    "id": "d228d1b6-6c25-44ed-9888-46b63cb51543",
+    "createdAt": "2025-11-27T18:47:22.6462099"
+  },
+  {
+    "beneficiary": "Office 365 Subscription",
+    "amount": 299.99,
+    "currency": "USD",
+    "dueDate": "2025-11-07",
+    "status": "PAID",
+    "id": "41082289-7b3d-4b47-8b67-3112a2b0537d",
+    "createdAt": "2025-11-27T18:47:22.6462099"
+  },
+  {
+    "beneficiary": "Adobe Creative Suite",
+    "amount": 599.99,
+    "currency": "USD",
+    "dueDate": "2025-11-17",
+    "status": "PAID",
+    "id": "ed74c846-9481-4ee0-8238-0f7ac1964e08",
+    "createdAt": "2025-11-27T18:47:22.6462099"
+  }
+]

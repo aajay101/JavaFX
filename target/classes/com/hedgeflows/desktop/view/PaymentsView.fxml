@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.hedgeflows.desktop.controller.PaymentsController"
+      spacing="20.0"
+      styleClass="root">
+
+    <padding>
+        <Insets top="30" right="30" bottom="30" left="30" />
+    </padding>
+
+    <children>
+
+        <Label text="Bills to Pay" styleClass="h1"/>
+
+        <TabPane tabClosingPolicy="UNAVAILABLE">
+
+            <tabs>
+
+                <!-- OUTSTANDING TAB -->
+                <Tab text="Outstanding">
+                    <content>
+                        <TableView fx:id="outstandingTable">
+
+                            <columns>
+                                <TableColumn fx:id="outstandingBeneficiaryColumn" text="Beneficiary" prefWidth="200"/>
+                                <TableColumn fx:id="outstandingAmountColumn" text="Amount" prefWidth="150"/>
+                                <TableColumn fx:id="outstandingDueDateColumn" text="Due Date" prefWidth="150"/>
+                                <TableColumn fx:id="outstandingStatusColumn" text="Status" prefWidth="100"/>
+                            </columns>
+
+                            <columnResizePolicy>
+                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+                            </columnResizePolicy>
+
+                        </TableView>
+                    </content>
+                </Tab>
+
+                <!-- PAID TAB -->
+                <Tab text="Paid">
+                    <content>
+                        <TableView fx:id="paidTable">
+
+                            <columns>
+                                <TableColumn fx:id="paidBeneficiaryColumn" text="Beneficiary" prefWidth="200"/>
+                                <TableColumn fx:id="paidAmountColumn" text="Amount" prefWidth="150"/>
+                                <TableColumn fx:id="paidDueDateColumn" text="Due Date" prefWidth="150"/>
+                                <TableColumn fx:id="paidStatusColumn" text="Status" prefWidth="100"/>
+                            </columns>
+
+                            <columnResizePolicy>
+                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+                            </columnResizePolicy>
+
+                        </TableView>
+                    </content>
+                </Tab>
+
+            </tabs>
+
+        </TabPane>
+
+    </children>
+
+</VBox>
