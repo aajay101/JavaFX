@@ -107,3 +107,4 @@ public abstract class JsonRepository<T extends BaseEntity> implements Repository
         saveAll(entities);
     }
 }
+

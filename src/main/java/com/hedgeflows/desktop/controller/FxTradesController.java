@@ -328,3 +328,4 @@ public class FxTradesController implements Initializable {
         alert.showAndWait();
     }
 }
+

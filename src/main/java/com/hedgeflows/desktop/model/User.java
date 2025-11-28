@@ -36,3 +36,4 @@ public class User extends BaseEntity {
         this.companyName = companyName;
     }
 }
+

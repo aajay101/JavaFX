@@ -18,3 +18,5 @@ module com.hedgeflows.desktop {
     exports com.hedgeflows.desktop.repository;
     exports com.hedgeflows.desktop.service;
 }
+
+

@@ -168,3 +168,4 @@ public class DashboardController {
         tradesTable.setStyle("-fx-background-radius: 12; -fx-padding: 8;");
     }
 }
+
